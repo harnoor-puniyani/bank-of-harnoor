@@ -149,3 +149,18 @@
       backface-visibility: hidden;
     }
 }
+
+/* Hide scrollbar for Webkit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and Edge (legacy) */
+html {
+  -ms-overflow-style: none;
+}
