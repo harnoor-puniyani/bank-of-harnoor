@@ -35,7 +35,7 @@ export function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            Bank of Harmony
+            Bank of Harnoor
           </motion.h1>
           <motion.p
             className="text-muted-foreground max-w-xl mx-auto"

@@ -9,7 +9,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 // import { ShieldCheck, Lock } from "lucide-react";
 import { RectangularVault } from "./vault";
 import { RealisticVault } from "./shield";
-import { ThreeDVault } from "./testModel";
+// import { ThreeDVault } from "./testModel";
 
 
 // Variants for staggering the text animation
@@ -83,7 +83,7 @@ export function Hero() {
         >
            {/* <div className="h-[20vh]" />  */}
       <div className="items-center w-full right-10 flex">
-        <ThreeDVault/>
+        {/* <ThreeDVault/> */}
       </div>
             
        {/* This empty div also adds scrollable space */}

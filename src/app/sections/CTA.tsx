@@ -22,7 +22,7 @@ export function CTA() {
             Ready to Secure Your Future?
           </h2>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-            Join the new era of digital finance. Open an account with Bank of Harmony and experience the pinnacle of security and transparency in just a few minutes.
+            Join the new era of digital finance. Open an account with Bank of Harnoor and experience the pinnacle of security and transparency in just a few minutes.
           </p>
           
           {/* Call to Action Button */}

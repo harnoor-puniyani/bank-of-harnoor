@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <h2 className="text-lg font-bold text-white">BoH of Harmony</h2>
+            <h2 className="text-lg font-bold text-white">Bank of Harnoor</h2>
             <p className="mt-2 text-sm">
               Engineering the future of secure digital finance.
             </p>
@@ -44,7 +44,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-slate-800 text-center text-sm">
-          <p>&copy; 2025 Bank of Harmony. All rights reserved.</p>
+          <p>&copy; 2025 Bank of Harnoor. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -5,7 +5,7 @@ import { useGLTF, Environment } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { ThreeDVault } from "./testModel";
 import { section } from "framer-motion/client";
-import { MathUtils, Color, Mesh } from 'three'; 
+import { MathUtils, Color, Mesh, Object3D } from 'three'; 
 import { ChevronDown } from 'lucide-react';
 import { Navbar } from "@/components/navbar";
 export function LandingZonw() {
@@ -22,7 +22,7 @@ export function LandingZonw() {
       >
         <h1 className="text-4xl font-bold text-foreground">
           {" "}
-          Bank of Harmony (BoH)
+          Bank of Harnoor (BoH)
         </h1>
         <p className="flex-inline text-lg">
           Welcome to a new era of digital banking. At BoH, your security is our
@@ -89,7 +89,7 @@ function CircuitBackground() {
 function Model() {
   const { scene } = useGLTF('/models/simple_safe.glb'); 
   const { scrollYProgress } = useScroll();
-  const doorRef = useRef<any>(null);
+  const doorRef = useRef<Object3D>(null);
 
   useEffect(() => {
     const newColor = new Color("#111827"); // A very dark, near-black color
@@ -142,7 +142,7 @@ export function TransparentSecurityHero() {
         {/* Navbar */}
         <Navbar />
         {/* <nav className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">BoH of Harmony</h1>
+          <h1 className="text-xl font-bold">BoH of Harnoor</h1>
           <div className="hidden md:flex items-center gap-6 text-slate-300">
             <a href="#" className="hover:text-white transition-colors">Personal</a>
             <a href="#" className="hover:text-white transition-colors">Business</a>
@@ -164,7 +164,7 @@ export function TransparentSecurityHero() {
               Security
             </h2>
             <p className="mt-4 text-lg text-slate-400">
-              Bank of Harmony: Future-Proofing
+              Bank of Harnoor: Future-Proofing
               <br/>
               Your Digital Finances.
             </p>

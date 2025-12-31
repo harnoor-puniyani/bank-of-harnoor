@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BoH",
-  description: "Bank of Harmony",
+  description: "Bank of Harnoor",
 };
 
 export default function RootLayout({

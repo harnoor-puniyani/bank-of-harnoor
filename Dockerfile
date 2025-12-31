@@ -10,7 +10,7 @@ RUN npm ci --omit=dev
 
 COPY . .
 
-RUN npm run build --no-turbo
+RUN npm run build 
 
 FROM node:25-slim AS worker
 

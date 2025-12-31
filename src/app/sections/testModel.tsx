@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls, Environment } from "@react-three/drei";
 import { useScroll } from "framer-motion";
-import { MathUtils } from "three";
+import { MathUtils, Object3D } from "three";
 import { Scale } from "lucide-react";
 
 // This component loads and controls the 3D model
@@ -15,7 +15,7 @@ function Model() {
   const { scrollYProgress } = useScroll();
 
   // This reference will hold the door part of the model once we find it.
-  const doorRef = useRef<any>(null);
+  const doorRef = useRef<Object3D>(null);
 
   // This useFrame hook runs 60 times per second, creating the animation.
   useFrame(() => {

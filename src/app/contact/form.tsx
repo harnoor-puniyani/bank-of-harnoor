@@ -22,7 +22,7 @@ export function ContactForm() {
             Contact Us
           </h1>
           <p className="mt-4 text-lg text-slate-400">
-            Have a question or a proposal? We'd love to hear from you.
+            {"Have a question or a proposal? We'd love to hear from you."}
           </p>
         </motion.div>
 

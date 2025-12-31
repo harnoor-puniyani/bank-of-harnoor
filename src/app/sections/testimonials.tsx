@@ -37,13 +37,13 @@ export function Testimonials() {
           {/* Quote Content */}
           <div className="relative z-10">
             <p className="text-xl md:text-2xl font-light italic text-slate-300">
-              "In an industry where security is paramount, Bank of Harmony doesn't just meet the standard—it sets a new one. Their transparent protocol and AI-driven threat analysis give us unparalleled peace of mind. It's the first financial platform that feels like it was built by engineers, for engineers."
+              {"In an industry where security is paramount, Bank of Harnoor doesn't just meet the standard—it sets a new one. Their transparent protocol and AI-driven threat analysis give us unparalleled peace of mind. It's the first financial platform that feels like it was built by engineers, for engineers."}
             </p>
             
             {/* Author Information */}
             <div className="mt-8 flex items-center gap-4">
               <Image
-                src="/avatar-placeholder.jpg" // Note: Add a placeholder image to your `public` folder
+                src="/image.png" // Note: Add a placeholder image to your `public` folder
                 alt="Alex Rivera"
                 width={56}
                 height={56}

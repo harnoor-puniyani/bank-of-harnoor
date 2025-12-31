@@ -72,7 +72,7 @@ export function Features() {
             A New Paradigm of Security
           </h2>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-            We've engineered our platform from the ground up to provide institutional-grade security for every user.
+            {"We've engineered our platform from the ground up to provide institutional-grade security for every user."}
           </p>
         </div>
 

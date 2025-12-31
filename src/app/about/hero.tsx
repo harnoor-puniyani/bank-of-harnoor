@@ -20,7 +20,7 @@ export function AboutHero() {
           Engineering Trust in a Digital World
         </h1>
         <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-          Bank of Harmony was founded on a simple principle: the security of your finances should be as transparent and robust as the code that powers them.
+          Bank of Harnoor was founded on a simple principle: the security of your finances should be as transparent and robust as the code that powers them.
         </p>
       </motion.div>
     </section>

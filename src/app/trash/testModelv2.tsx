@@ -6,11 +6,12 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Environment } from '@react-three/drei';
 import { useScroll } from 'framer-motion';
 import { MathUtils } from 'three';
+import * as THREE from 'three';
 
 function Model() {
   const { scene } = useGLTF('/models/simple_safe.glb'); 
   const { scrollYProgress } = useScroll();
-  const doorRef = useRef<any>(null);
+  const doorRef = useRef<THREE.Object3D | null>(null);
 
   useFrame((state, delta) => { // 'delta' is the time since the last frame
     if (!doorRef.current) {
