@@ -1,0 +1,49 @@
+name: 1.0.$(Date:yyyymmdd).$(rev:r)
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+
+resources:
+  repositories:
+    - repository: templates
+      name: azure-cicd-templates
+      type: git 
+      ref: refs/heads/main
+
+
+variables:
+  - name: imageName
+    value: harnoorpuniyani/boh-portal
+  - name: imageTag
+    value: $(Build.BuildNumber)
+
+stages:
+  - stage: Build
+    isSkippable: false
+    jobs:
+      - job: repoScan
+        steps:
+          - template: trivy-repo-scan.yaml@templates
+      - job: Build
+        steps:
+          # - template: docker-build-and-push.yaml@templates
+          #   parameters:
+          #     imageName: ${{ var.imageName }}
+          #     imageTag: ${{var.imageTag }}
+          #     directory: .
+          #     dockerRegistry: docker-harnoorpuniyani
+
+          - template: docker-multi-architecture-build-and-push.yaml@templates
+            parameters:
+              imageName: $(imageName)
+              imageTag: $(imageTag)
+              architecture: linux/amd64,linux/arm64
+              directory: .
+              dockerRegistry: docker-harnoorpuniyani
+          
+          - template: trivy-image-scan.yaml@templates
+            parameters:
+              imageName: $(imageName)
+              imageTag: $(imageTag)
