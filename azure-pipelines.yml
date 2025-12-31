@@ -15,7 +15,7 @@ resources:
 
 variables:
   - name: imageName
-    value: harnoorpuniyani/boh-portal
+    value: harnoorpuniyani/boh-static
   - name: imageTag
     value: $(Build.BuildNumber)
 
